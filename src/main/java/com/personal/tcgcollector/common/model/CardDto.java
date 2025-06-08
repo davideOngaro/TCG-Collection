@@ -22,5 +22,5 @@ public class CardDto {
     private String ability;
     private String trigger;
     private SetDto set;
-    private List<String> notes;
+    private List<Object> notes;
 }

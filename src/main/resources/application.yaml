@@ -15,6 +15,11 @@ feign:
   client:
     config:
       tcg-api:
-        url: https://apitcg.com/api/
+        url: https://www.apitcg.com/api/
         connectTimeout: 5000
         readTimeout: 10000
+        requestInterceptors:
+          - com.personal.tcgcollector.client.interceptor.ApiKeyRequestInterceptor
+
+apitcg:
+  api-key: db4b10b9cf7e7f3560804c5a473ef2690d5821f03f8cd0ffea90f19f95a067b6

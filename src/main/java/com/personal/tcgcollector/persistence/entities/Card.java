@@ -30,7 +30,7 @@ public class Card {
 
     private String family;
 
-
+    @Column(length= 1000)
     private String ability;
 
 
