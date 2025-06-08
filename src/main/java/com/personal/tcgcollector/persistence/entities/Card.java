@@ -1,4 +1,4 @@
-package com.personal.tcgcollector.entities;
+package com.personal.tcgcollector.persistence.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

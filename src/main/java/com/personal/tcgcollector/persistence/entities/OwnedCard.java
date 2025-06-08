@@ -1,4 +1,4 @@
-package com.personal.tcgcollector.entities;
+package com.personal.tcgcollector.persistence.entities;
 
 import com.personal.tcgcollector.common.model.Condition;
 import jakarta.persistence.*;
@@ -17,7 +17,8 @@ public class OwnedCard {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String userId;
+    @ManyToOne
+    private User userId;
 
     private int quantity = 1;
 

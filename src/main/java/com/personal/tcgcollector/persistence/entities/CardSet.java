@@ -1,4 +1,4 @@
-package com.personal.tcgcollector.entities;
+package com.personal.tcgcollector.persistence.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -20,7 +20,6 @@ public class CardSet {
     @Id
     private String code; // es: OP01, ST01, P
 
-    private String type; // es: Main, Starter, Promo
     private String name;
 
     @OneToMany(mappedBy = "set")

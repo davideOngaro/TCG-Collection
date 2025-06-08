@@ -10,3 +10,11 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+feign:
+  client:
+    config:
+      tcg-api:
+        url: https://apitcg.com/api/
+        connectTimeout: 5000
+        readTimeout: 10000
